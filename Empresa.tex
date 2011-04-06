@@ -1,7 +1,7 @@
 \documentclass[a4paper,10pt,titlepage]{article}
 \usepackage[left=2cm,top=3cm,right=2cm,bottom=1cm,head=2.0cm,includefoot]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[spanish,activeacute]{babel}
 \usepackage{comment}
 \usepackage{fancyhdr}
 \usepackage[T1]{fontenc}
@@ -9,7 +9,6 @@
 \usepackage{bookman}
 \usepackage{amsmath}
 \usepackage{color}
-\usepackage{listings}
 \usepackage{longtable}
 \usepackage{moreverb}
 \usepackage{booktabs}
@@ -23,15 +22,12 @@
 \usepackage{t1enc}
 \usepackage{textcomp}
 \usepackage{marvosym}
-\usepackage{wasysym}
 \usepackage{latexsym}
 \usepackage{amssymb}
-\usepackage{microtype}
 \usepackage{hyperref}
 \usepackage{slashbox} %slash para la tabla
 \usepackage{colortbl} %tablas con colores
 \usepackage{pdfpages} % to import PDF pages
-\tolerance=1000
 
 
 \title{71.12 - Estructura de las Organizaciones}
@@ -241,12 +237,11 @@ Contratar una consultora para que analice el caso y revertir la situaci\'on de e
 
 \subsection{Organigrama Derivado del Enunciado}
 \begin{center}
-\includegraphics[scale=0.70]{./herculesDiag.png}
+\includegraphics[width=310pt]{./herculesDiag.png}
  \end{center}
 
 \newpage
 \section{Tejedur\'ias Dolly}
-
 \subsection{Enunciado}
 \textbf{1- INTRODUCCI\'ON}\\
 Este ejemplo ha sido tomado de un caso real, al cual se le han practicado algunas
@@ -440,38 +435,41 @@ no tenia la experiencia en el rubro como para liderar este cambio.\\ \\
 medidas que se deben poner en practica para mejorar la situación problemática en
 que se encuentra la empresa.\\
 
-
-********** FALTA EL ESQUEMA DEL ENUNCIADO
-
+\begin{center}
+\includegraphics[scale=0.75]{./esquemaproduccionDolly.png}
+\end{center}
+\newpage
 \subsection{Organigrama Derivado del Enunciado}
-\begin{center} \includegraphics[scale=0.58]{./dollyDiag.png} \end{center}
+\begin{center} \includegraphics[scale=0.75]{./dollyDiag.png} \end{center}
 
-\subsection{An\'alisis FODA}
-\begin{itemize}
- \item FORTALEZAS 
-    \begin{itemize}
-    \item Trabajar con materia prima de calidad.
-    \item Ser una fabrica de tejido de punto integrada verticalmente hasta llegar al consumidor.
-    \end{itemize}
- \item OPORTUNIDADES
-    \begin{itemize}
-    \item Avance Tecnol\'ogico-
-    \end{itemize}
- \item DEBILIDADES
-    \begin{itemize}
-     \item Contar con un sistema informático rígido que sufre continuos problemas que impiden la actualización de la información.
-     \item Falta de capacitación para el manejo de nuevas maquinarias.
-     \item El personal se resiste a los cambios tecnológicos.
-    \end{itemize}
- \item AMENAZAS
-    \begin{itemize}
-     \item Entrada de nuevos competidores.
-    \end{itemize}
-\end{itemize}
+\newpage
+\subsection{Matriz FODA}
+  \begin{tabular}{|c|c|}
+    \hline 
+      \textbf{Fortalezas} & \textbf{Oportunidades} \\ \hline
+& \\
+- Trabajar con materia prima de calidad. 
+& - Avance tecnologico.\\
+&\\
+- Ser una f\'abrica de punto integrada & \\verticalmente hasta llegar al consumidor. &\\ &\\
 
-\underline{Medidas que se deben poner en práctica:}\\
+\hline 
+    \textbf{Debilidades} & \textbf{Amenazas} \\
+\hline     
+&\\
+- Contar con un sistema inform\'atico r\'igido& - Entrada de nuevos competidores. \\que sufre continuos problemas que impide la &\\ actualizaci\'on de lainformaci\'on. &\\
+&\\
+- Falta de capacitaci\'on de personal para &\\el uso de las nuevas maquinarias. &\\
+&\\
+- Personal se resiste a cambios tecnol\'ogicos. &\\&\\ 
+ \hline    
+  \end{tabular}
 
-- Capacitar al personal para el uso de las nuevas maquinarias.\\
-- Actualizar el sistema informático para que se actualicen correctamente la información sobre ventas, stock y pedidos de los clientes.\\ \\
+  
+\subsection{Medidas que se deben poner en pr\'actica}
+ \begin{enumerate}
+ \item Capacitar al personal para el uso de las nuevas maquinarias.
+ \item Mantener actualizado el sistema inform\'atico de la empresa, de manera que la informaci\'on sobre ventas, stock y pedidos de los clientes se actualice correctamente y de esa forma evitar incovenientes en las tiendas e incovenientes contables.
+\end{enumerate} 
 
 \end{document}
