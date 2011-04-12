@@ -1,7 +1,9 @@
 \documentclass[a4paper,10pt,titlepage]{article}
-\usepackage[left=2cm,top=3cm,right=2cm,bottom=1cm,head=2.0cm,includefoot]{geometry}
+\usepackage[paperwidth=190mm,paperheight=290mm,left=2cm,top=3cm,right=0.5cm,bottom=1cm,head=2.0cm,includefoot]{geometry}
+\usepackage[a4,frame,center,noinfo,horigin=-0.75in]{crop}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish,activeacute]{babel}
+\usepackage{lastpage}
 \usepackage{comment}
 \usepackage{fancyhdr}
 \usepackage[T1]{fontenc}
@@ -16,6 +18,7 @@
 \usepackage{ulem}
 \usepackage[pdfborder={0 0 0 0}]{hyperref}
 \usepackage{fixltx2e}
+\usepackage{array}
 \usepackage{float}
 \usepackage{wrapfig}
 \usepackage{soul}
@@ -29,7 +32,8 @@
 \usepackage{colortbl} %tablas con colores
 \usepackage{pdfpages} % to import PDF pages
 
-
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
 \title{\textbf{71.12 - Estructura de las Organizaciones}\\
               \bigskip
               \bigskip
@@ -46,10 +50,11 @@
 \pagestyle{fancy}
 \chead{Grupo B1}
 \lhead{\includegraphics[width=1.7cm]{./logo1.png}}
-\lfoot{71.12 - Estructura de las Organizaciones}
-\rfoot{$1^{er}$ Cuatrimestre 2011}
-\maketitle
+\lfoot{71.12}
+\rfoot{$1^{er}$ Cuat. 2011}
+\cfoot{P\'agina \thepage \hspace{0.5pt} de \pageref{LastPage}}
 
+\maketitle
 \tableofcontents
 \newpage
 
@@ -457,9 +462,11 @@ que se encuentra la empresa.\\
 En la siguiente tabla aparecen las empresas que conseguimos con sus respectivos puntajes.\\
 La empresa elegida es Imagen y Comunicaci\'on ya que tiene el puntaje m\'as alto y se han mostrado insteresados en ayudarnos
 con el trabajo de campo.
+\newcolumntype{x}[1]{%
+>{\centering\hspace{0pt}}p{#1}}%
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|x{3cm}|c|}
   \hline
   \backslashbox{Caracter\'istica}{Empresa} & Puntaje & ServiFlex & Grupo Al Sur & Imagen y Comunicaci\'on & Punto1\\
   \hline
