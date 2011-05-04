@@ -32,9 +32,11 @@
 \usepackage{colortbl} %tablas con colores
 \usepackage{pdfpages} % to import PDF pages
 \usepackage{xcolor}
+\usepackage{titlesec}
 
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
+\titleformat{\section}[hang]{\Huge }{}{0px}{\centering \hspace{1ex}}{}
 
 \begin{document}
 
@@ -50,7 +52,20 @@
 
 %documento
 
+%\part{Casos}
+\vspace*{\fill}
+\begin{center}
+\begingroup
+\titlerule
+\vspace{1cm}
 \section{Casos}
+\vspace{1cm}
+\titlerule
+\endgroup
+\end{center}
+\vspace*{\fill}
+
+%\section{Casos}
 \subsection{Elevadores H\'ercules}
 
 \subsubsection{Enunciado}
@@ -409,9 +424,9 @@ que se encuentra la empresa.\\
 \begin{center}
 \includegraphics[scale=0.75]{./DollyEsquemaProduccion.png}
 \end{center}
-\newpage
+
 \subsubsection{Organigrama Derivado del Enunciado}
-\begin{center} \includegraphics[scale=0.75]{./DollyOrnigramaSolucion.png} \end{center}
+\begin{center} \includegraphics[scale=0.55]{./DollyOrnigramaSolucion.png} \end{center}
 
 \newpage
 \subsubsection{Matriz FODA}
@@ -562,7 +577,20 @@ Se encarga de almacenar insumos, repuestos y materiales que se consumen dentro d
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
+\vspace*{\fill}
+\begin{center}
+\begingroup
+\titlerule
+\vspace{1cm}
 \section{Empresa: Imagen y Comunicaci\'on}
+\vspace{1cm}
+\titlerule
+\endgroup
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
 \subsection{Tabla de Selecci\'on de Empresas}
 
 En la siguiente tabla aparecen las empresas que conseguimos con sus respectivos puntajes.\\
@@ -781,6 +809,18 @@ Ilce Pesaresi es la gerente de Producci\'on, el \'area m\'as grande de la empres
 
 Se observa que existe un predominio de las relaciones informales dentro de la empresa. El liderazgo en cada sector del n\'ucleo operativo lo toma el trabajador con mayor experiencia, casi \textit{de facto}. No se comunica a los obreros la ideolog\'ia ni la misi\'on de la empresa, ni ning\'un aspecto administrativo, de modo que es frecuente la aparici\'on de rumores y de dudas sobre su continuidad en la empresa.
 \end{itemize}
+
 \newpage
+\vspace*{\fill}
+\begin{center}
+\begingroup
+\titlerule
+\vspace{1cm}
 \section{Presentaci\'on}
+\vspace{1cm}
+\titlerule
+\endgroup
+\end{center}
+\vspace*{\fill}
+
 \end{document}
