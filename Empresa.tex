@@ -33,6 +33,7 @@
 \usepackage{pdfpages} % to import PDF pages
 \usepackage{xcolor}
 \usepackage{titlesec}
+\usepackage{rotating}
 
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
@@ -720,102 +721,120 @@ hac\'ia un esfuerzo por no priorizar a un cliente sobre otro y por intentar trat
 
 \newpage
 
+% Comando \puesto. Uso: \puesto{Nombre del puesto}{Dirección}{Responde a}{Descripción del puesto}{Funciones}{Responsabilidad}{Autoridad}{Perfil del puesto}
+\newcommand{\puesto}[8]{
+\begin{tabular}{|c|l|}\hline
+& Direcci\'on: #2 \\\cline{2-2}
+& Responde a: #3 \\\cline{2-2}
+& \begin{minipage}{0.9\textwidth}
+    \vspace{0.5cm}
+    \textit{Descripci\'on del puesto}:
+    #4
+    \vspace{0.5cm}
+\end{minipage}
+\\
+\cline{2-2}
+\multirow{4}{*}{\begin{sideways}{\textbf{\large#1}}\end{sideways} } & \begin{minipage}{0.9\textwidth}
+    \vspace{0.5cm}
+    \textit{Funciones}:
+    #5
+    \vspace{0.5cm}
+\end{minipage}
+\\
+\cline{2-2}
+& \begin{minipage}{0.9\textwidth}
+    \vspace{0.5cm}
+    \textit{Responsabilidad}:
+    #6
+    \vspace{0.5cm}
+\end{minipage} 
+\\
+\cline{2-2}
+& \begin{minipage}{0.9\textwidth}
+    \vspace{0.5cm}
+    \textit{Autoridad}:
+    #7
+    \vspace{0.5cm}
+\end{minipage}\\\cline{2-2}
+& \begin{minipage}{0.9\textwidth}
+    \vspace{0.5cm}
+    \textit{Perfil del Puesto}:
+    #8
+    \vspace{0.5cm}
+\end{minipage}\\\hline
+\end{tabular}
+
+}
+
 \subsection{ Manual de Funciones }
 
 \subsubsection{Direcci\'on General}
 
-\begin{description}
-	\item[Direcci\'on General] 
-\end{description}
-\underline{\textit{Direcci\'on:}}  Direcci\'on \\
-\underline{\textit{Reporta a:}} \textit{Nadie} \\
-\underline{\textit{Descripci\'on del puesto:}} Gerente General
-\bigskip
-\bigskip
-\\
+\puesto{Direcci\'on General}{Direcci\'on}{Nadie}
+{
+    Gerente General
+}
+{
+ \begin{itemize}
+    \item[-] Liderar el planeamiento estrat\'egico de la empresa
+    \item[-] Desarrollar estrategias generales para alcanzar estos objetivos propuestos
+    \item[-] Distribuir estos objetivos entre las diferentes \'areas
+    \item[-] Seleccionar personal competente para liderar los diferentes departamentos
+    \item[-] Aprobar, modificar o rechazar todo tipo de sugerencias
+ \end{itemize}
+}
+{
+ \begin{itemize}
+    \item[-] Planear, dirigir y controlar las actividades de la empresa
+    \item[-] Fijar los objetivos generales (globales) de la empresa
+    \item[-] Asignar objetivos y recursos a cada sector y departamento
+    \item[-] Velar por el buen funcionamiento de la empresa
+ \end{itemize}
+}
+{ 
+ \begin{itemize}
+    \item[-] Autoridad absoluta sobre todo el personal de la empresa
+    \item[-] Puede delegar y cambiar autoridades, funciones y responsabilidades a los gerentes de los diferentes departamentos
+ \end{itemize}
+}
+{
 
-\begin{tabular}{|l|l|}
-\hline
-\multirow{6}{0.5cm}{\vspace{24mm} \textbf{\\G\\E\\R\\E\\N\\C\\I\\A}\\ 
-\vspace{5mm} 
-\textbf{G\\E\\N\\E\\R\\A\\L}}
-&\\ &\textbf{\underline{Funci\'on:}}\\ &\\
+}
 
-&-Liderar el planeamiento estrat\'egico de la empresa\\ &\\
-&-Desarrollar estrategias generales para alcanzar estos objetivos propuestos\\ &\\ 
-&-Distribuir estos objetivos entre las diferentes \'areas\\ &\\
-&-Seleccionar personal competente para liderar los diferentes departamentos\\ &\\
-&-Aprobar, modificar o rechazar todo tipo de sugerencias\\ &\\
-
-\cline{2-2}
-&\\ &\textbf{\underline{Responsabilidad:}}\\ &\\
-&-Planear, dirigir y controlar las actividades de la empresa\\ &\\
-&-Fijar los objetivos generales (globales) de la empresa\\ &\\
-&-Asignar objetivos y recursos a cada sector y departamento\\ &\\
-&-Velar por el buen funcionamiento de la empresa\\ &\\
-
-\cline{2-2}
-&\\ &\textbf{\underline{Autoridad:}}\\ &\\
-&-Autoridad absoluta sobre todo el personal de la empresa\\ &\\
-&-Puede delegar y cambiar autoridades, funciones y esponsabilidades a los gerentes de los\\
-&diferentes departamentos\\ &\\
- \hline
-\end{tabular}
-
-\bigskip
-\underline{\textit{Funci\'on:}} \\
-\begin{itemize}
-	\item[-] Liderar el planeamiento estrat\'egico de la empresa
-	\item[-] Desarrollar estrategias generales para alcanzar estos objetivos propuestos
-	\item[-] Distribuir estos objetivos entre las diferentes \'areas
-	\item[-] Seleccionar personal competente para liderar los diferentes departamentos
-	\item[-] Aprobar, modificar o rechazar todo tipo de sugerencias
-\end{itemize}
-\underline{\textit{Responsabilidad:}} \\
-\begin{itemize}
-	\item[-] Planear, dirigir y controlar las actividades de la empresa
-	\item[-] Fijar los objetivos generales (globales) de la empresa
-	\item[-] Asignar objetivos y recursos a cada sector y departamento
-	\item[-] Velar por el buen funcionamiento de la empresa
-\end{itemize}
-\underline{\textit{Autoridad:}} \\
-\begin{itemize}
-	\item[-] Autoridad absoluta sobre todo el personal de la empresa
-	\item[-] Puede delegar y cambiar autoridades, funciones y responsabilidades a los gerentes de los diferentes departamentos
-\end{itemize}
-\bigskip
-
+\newpage
 
 \subsubsection{Dise\~no Gr\'afico}
 \smallskip
 Del relevamiento de este sector surgen diferencias respecto del organigrama presentado por la empresa, ya que si bien se ocupa de las impresiones y dise\~nos de la misma, tambien realiza trabajos para otras empresas, por lo que puede decir que no cumple funciones de Linea sino de Staff.
 
-    \begin{description}
-     \item[Dise\~no Gr\'afico] 
-     \end{description}
-      \underline{\textit{Direcci\'on:}}  Dise\~no Gr\'afico \\
-      \underline{\textit{Reporta a:}} Gerente general \\
-      \underline{\textit{Descripci\'on del puesto:}} Dise\~nador Gr\'afico \\
-      \underline{\textit{Funci\'on:}}
-        \begin{itemize}
+\puesto{Dise\~no gr\'afico}{Dise\~no gr\'afico}{Gerente General}
+{
+    Dise\~nador Gr\'afico
+}
+{
+    \begin{itemize}
         \item Coordinar los dise\~nos a producir con el cliente.
         \item Realizar los dise\~nos pedidos.
         \item Realizar impresiones internas de la empresa y Plotters.
         \item Colocar Plotters.
-        \end{itemize}
-      \underline{\textit{Responsabilidad:}} \\
-      \underline{\textit{Autoridad:}} \\
-      \underline{\textit{Perfil del puesto:}} \\
-      \begin{itemize}
+    \end{itemize}
+}
+{
+
+}
+{
+
+}
+{
+    \begin{itemize}
       \item Apreciaci\'on est\'etica, imaginaci\'on y originalidad, que permitan el desarrollo de proyectos novedosos, creativos y de valor pl\'astico.
-      \item  Agudeza visual, agilidad manual y precisi\'on para el manejo de equipo y herramientas, para la aplicaci\'on de procesos t\'ecnicos y art\'isticos.
+      \item Agudeza visual, agilidad manual y precisi\'on para el manejo de equipo y herramientas, para la aplicaci\'on de procesos t\'ecnicos y art\'isticos.
       \item Habilidad para dise\~nar y dibujar. 
       \item Habilidad para conceptualizar y desarrollar proyectos a partir de la recopilaci\'on, la interpretaci\'on y el an\'alisis de la informaci\'on. 
       \item Facilidad de palabra y sentido cr\'itico que permitan tomar, analizar, explicar y justificar decisiones de toda \'indole.
-      \end{itemize}
-      \bigskip
-
-
+    \end{itemize}
+}
+\newpage
 \subsubsection{Gerencia de Administraci\'on de Personal y Finanzas}
 
  \begin{itemize}
@@ -826,84 +845,84 @@ Del relevamiento de este sector surgen diferencias respecto del organigrama pres
  En este sector se notan importantes diferencias respecto del organigrama relevado por la empresa; las funciones en el mismo no est\'an correctamente definidas ya que la encargada de personal se ocupa adem\'as de trabajos de contaduría y la recepcionista realiza trabajos administrativos.
  \bigskip
  \bigskip
-     \begin{description}
-     \item[Administraci\'on contable] 
-     \end{description}
-      \underline{\textit{Direcci\'on:}}  Administraci\'on del personal y finanzas \\
-      \underline{\textit{Reporta a:}} Gerente general \\
-      \underline{\textit{Descripci\'on del puesto:}} Encargado de contabilidad y finanzas
-      \bigskip
-      \bigskip
-      \\
-      \underline{\textit{Funci\'on:}} \\
-        \begin{itemize}
+ \puesto{Administraci\'on Contable}{Administraci\'on del personal y finanzas}{Direcci\'on General}{Encargado de Contabilidad y Finanzas}
+ {
+    \begin{itemize}
         \item[-] Gestionar y administrar el dinero
         \item[-] Hacer los balances de la empresa
         \item[-] Efectuar estimaciones de gastos
-        \end{itemize}
-      \underline{\textit{Responsabilidad:}} \\
-        \begin{itemize}
+    \end{itemize}
+ }
+ {
+    \begin{itemize}
         \item[-] Gestionar los cr\'editos y las cobranzas
         \item[-] Realizar los pagos a proveedores, conciliaciones bancarias
-        \end{itemize}
-      \underline{\textit{Autoridad:}} \\
-        \begin{itemize}
+    \end{itemize}
+ }
+ {
+    \begin{itemize}
          \item[-] Determinar incobrables
          \item[-] Emitir balance anual de la empresa, libros de IVA
-        \end{itemize}
-      \bigskip
+    \end{itemize}
+ }
+ {
+ 
+ }
 
-     \begin{description}
-     \item[Legales y personal] 
-     \end{description}
-      \underline{\textit{Direcci\'on:}}  Administraci\'on del personal y finanzas \\
-      \underline{\textit{Reporta a:}} Gerente general \\
-      \underline{\textit{Descripci\'on del puesto:}} Administraci\'on del personal y legales 
-      \bigskip
-      \bigskip
-      \\
-      \underline{\textit{Funci\'on:}} 
-        \begin{itemize}
+
+\newpage
+
+\puesto{Legales y Personal}{Administraci\'on del personal y finanzas}{Direcci\'on General}{Administraci\'on del Personal y Legales}
+{
+    \begin{itemize}
         \item[-] Incorporaci\'on y capacitaci\'on del personal
         \item[-] Coordinaci\'on y control de liquidaci\'on de sueldos, c\'alculo de impuesto a las ganancias, deducciones
         \item[-] Evaluaci\'on de las actividades vigilando la observancia de leyes y reglamentos aplicables
         \item[-] Dem\'as tareas administrativas relaccionadas con recursos humanos: n\'ominas, vacaciones, pr\'estamos, etc.
         \item[-] Apoyo contable y tesorer\'ia
-        \end{itemize}
-      \underline{\textit{Responsabilidad:}} \\
-        \begin{itemize}
+    \end{itemize}
+}
+{
+    \begin{itemize}
          \item[-] Controlar y llevar a cabo la liquidaci\'on de sueldos en forma mensual, coordinar vacaciones, cuidar que todos los empleados tengan garantizado un respaldo m\'edico
         \item[-] Gesti\'on del desempeño, capacitaci\'on de nuevos empleados
         \item[-] Mantenerse actualizado y cumplir con las normativas vigentes
         \item[-] Generar un ambiente de trabajo que permita el desarrollo personal y profesional
-        \end{itemize}
-      \underline{\textit{Autoridad:}} \\
-       \begin{itemize}
+    \end{itemize}
+}
+{
+    \begin{itemize}
         \item[-] Aceptar, solicitar modificaciones o rechazar pedidos de modificaci\'on de sueldo
         \item[-] Denunciar incumplimientos en las normativas laborales
-        \end{itemize}
-      \bigskip
-      
-     \begin{description}
-     \item[Recepci\'on] 
-     \end{description}
-      \underline{\textit{Direcci\'on:}}  Administraci\'on del personal y finanzas \\
-      \underline{\textit{Reporta a:}} Legales y personal \\
-      \underline{\textit{Descripci\'on del puesto:}} Recepci\'on 
-      \bigskip
-      \bigskip
-      \\
-      \underline{\textit{Funci\'on:}}
-        \begin{itemize}
-        \item Ingreso de visitas
-        \item Trabajos administrativos
-        \end{itemize}
-      \underline{\textit{Responsabilidad:}} \\
-        \begin{itemize}
+    \end{itemize}
+}
+{
+
+}
+
+\newpage
+
+\puesto{Recepci\'on}{Administraci\'on del personal y finanzas}{Legales y Personal}{Recepci\'on}
+{
+    \begin{itemize}
+        \item[-] Ingreso de visitas
+        \item[-] Trabajos administrativos
+    \end{itemize}
+}
+{
+    \begin{itemize}
         \item[-] Correspondencia
         \item[-] Agenda de gerentes
-        \end{itemize}
-      \bigskip
+    \end{itemize}
+}
+{
+
+}
+{
+
+}
+
+\newpage
 
 \subsubsection{Gerencia de Comercializaci\'on}
 
@@ -914,81 +933,78 @@ El trato con los clientes es escaso ya que no se lleva a cabo ning\'un tipo de e
 en la empresa est\'a basada en la antig\"uedad del contrato con Nike. Sin embargo, junto con la Direcci\'on de 
 la empresa, mantiene un fuerte v\'inculo el presidente de Nike Argentina SRL, su gerente de finanzas y su gerente de retail.
 
-\begin{description}
- \item Sector de Ventas Locales
-    \begin{itemize}
-    \item[-] \underline{Direcci\'on}: Gerencia de Comercializaci\'on
-    \item[-] \underline{Reporta a}: Direcci\'on General
-    \item[-] \underline{Descripci\'on del Puesto}:
+\puesto{Sector de Ventas Locales}{Gerencia de Comercializaci\'on}{Direcci\'on General}
+{
   Se encarga de administrar las ventas en el \'ambito nacional. Se identifican dos tipos de clientes: los mayoristas y los minoristas.
   A los primeros se les da una especie de trato especial, que en los \'ultimos tiempos ha fortalecido la comunicaci\'on con ellos ya 
   que son los clientes prioritarios de Nike Argentina SRL. Por otro lado, los minoristas no reciben cat\'alogos ni se les 
   notifican los aumentos de precios. No se los contacta para evaluar las condiciones del mobiliario o sugerir su reposici\'on.
-    \item[-] \underline{Funci\'on}:
-	      \begin{itemize}
-	      \item Recibir y Coordinar Pagos
-	      \item Contactar clientes locales e informar modificaciones del cat\'alogo
-	      \item Coordinar plazos de entrega
-	      \end{itemize}
-    \item[-] \underline{Responsabilidad}:
-	      \begin{itemize}
-	       \item Priorizar a los clientes mayoristas
-	       \item Asegurar el cumplimiento de plazos de entrega convenidos
-	      \end{itemize}
-    \item[-] \underline{Autoridad}:
-		\begin{itemize}
-		 \item Informar a producci\'on sobre los requerimientos
-		 \item Exigir cumplimiento de plazos de entrega a producci\'on
-		\end{itemize}
-
-		
-    \end{itemize}
-
-
- \item Sector de Comercio Exterior
+}
+{
     \begin{itemize}
-    \item[-] \underline{Direcci\'on}: Gerencia de Comercializaci\'on
-    \item[-] \underline{Reporta a}:
-    \item[-] \underline{Descripci\'on del Puesto}:
-  La situaci\'on es similar al sector de ventas locales, con la diferencia que hay clientes m\'as prioritarios.
+	      \item[-] Recibir y Coordinar Pagos
+	      \item[-] Contactar clientes locales e informar modificaciones del cat\'alogo
+	      \item[-] Coordinar plazos de entrega
+	\end{itemize}
+}
+{
+    \begin{itemize}
+	       \item[-] Priorizar a los clientes mayoristas
+	       \item[-] Asegurar el cumplimiento de plazos de entrega convenidos
+	\end{itemize}
+}
+{
+	\begin{itemize}
+         \item[-] Informar a producci\'on sobre los requerimientos
+		 \item[-] Exigir cumplimiento de plazos de entrega a producci\'on
+	\end{itemize}
+}
+{
+
+}
+
+\puesto{Sector de Comercio Exterior}{Gerencia de Comercializaci\'on}{Direcci\'on General}
+{ 
+La situaci\'on es similar al sector de ventas locales, con la diferencia que hay clientes m\'as prioritarios.
   El contacto con ellos es frecuente y semestralmente, como con el resto de los clientes mayoristas de exportación, 
   se realiza una planificación de pedidos que involucra aperturas de locales y remodelación de los existentes.
   Sin embargo, la comunicaci\'on carece de formalidad y trae como consecuencia muchas confusiones ya que los clientes 
   suelen contactar directamente al presidente de la empresa. El hecho de que el cliente en ocasiones se contacte de forma 
   directa con el presidente quita autoridad a lo coordinado previamente con el sector de comercio exterior.
-    \item[-] \underline{Funci\'on}:
-	      \begin{itemize}
-	      \item Recibir y Coordinar Pagos con los clientes del exterior
-	      \item Contactar y coordinar plazos de entrega y precios.
-	      \end{itemize}
-    \item[-] \underline{Responsabilidad}:
-    \item[-] \underline{Autoridad}:
-    \end{itemize}
-\end{description}
+}
+{
+    \begin{itemize}
+	      \item[-] Recibir y Coordinar Pagos con los clientes del exterior
+	      \item[-] Contactar y coordinar plazos de entrega y precios.
+	\end{itemize}
+}
+{
 
+}
+{
+
+}
+{
+
+}
+
+\newpage
 
 \subsubsection{Gerencia de Ingenier\'ia y Desarrollo}
 \smallskip
 Este sector se encarga de prestar los medios materiales necesarios para desarrollar las metas que se propone la empresa. Su acci\'on conjunta con Planeamiento es de gran importancia en t\'erminos de innovaci\'on para los productos y respuestas inmediatas a las exigencias del mercado en general y de su principal cliente, Nike.
 
-\begin{description}
-     \item[Ingenier\'ia y Desarrollo] 
-\end{description} 
-\smallskip
-\underline{\textit{Direcci\'on:}} Gerencia de Ingenier\'ia y Desarrollo\\
-\underline{\textit{Reporta a:}} Gerente General \\
-\underline{\textit{Descripci\'on del puesto:}} Comprende todo lo relacionado con la investigaci\'on b\'asica y aplicada y el desarrollo para el mejoramiento de productos, procesos nuevos e investigaci\'on para el mejoramiento de procesos y desarrollo.
-\bigskip
-\bigskip
-\\
-
-\underline{\textit{Funci\'on:}} \\
+\puesto{Ingenier\'ia y Desarrollo}{Gerencia de Ingenier\'ia y Desarrollo}{Direcci\'on General}
+{
+Comprende todo lo relacionado con la investigaci\'on b\'asica y aplicada y el desarrollo para el mejoramiento de productos, procesos nuevos e investigaci\'on para el mejoramiento de procesos y desarrollo.
+}
+{
 \begin{itemize}
 	\item[-] Su principal inter\'es se centra en la optimizaci\'on de los recursos para su mejor aprovechamiento. Si bien los procesos de industrializaci\'on en la empresa han sido siempre paulatinos, esta \'area tiene la funci\'on de suministrar los recursos t\'ecnicos y formales necesarios para que el empleado pueda desarrollarse adecuadamente en el \'ambito laboral en el que est\'a inserto, atendiendo a sus necesidades de modo de lograr un equilibrio entre las satisfacci\'on laboral de su personal y las exigencias del mercado.
 	
 \end{itemize}
-
-\underline{\textit{Responsabilidad:}} \\
+}
+{
 \begin{itemize}
    \item[-] Implementar sistemas de producci\'on m\'as eficientes y funcionales al sistema que respeten los valores intr\'insecos de la empresa. En ese sentido, no s\'olo tiene la responsabilidad de llevar al cabo los distintos planes productivos que muchas veces traen aparejados mejoras tecnol\'ogicas sino tambi\'en mejorar las condiciones de producci\'on para alcanzar as\'i una mayor efectividad. 
    
@@ -1001,10 +1017,8 @@ Este sector se encarga de prestar los medios materiales necesarios para desarrol
    \item[-] Llevar al cabo las medidas haciendo observar los valores que identifican a la empresa. 
 
 \end{itemize}	
-
-
-\underline{\textit{Autoridad:}} \\
-
+}
+{
 \begin{itemize}
 
    \item[-] Cumplimiento de la jornada laboral. 
@@ -1014,6 +1028,10 @@ Este sector se encarga de prestar los medios materiales necesarios para desarrol
    \item[-] Emplear el nuevo software especialmente dise\~nado para que la gerencia se ponga en contacto con el personal y as\'i lograr una comunicaci\'on a trav\'es de la cual el empleado sienta que sus demandas sugerencias o propuestas son tenidas en cuenta 
 
 \end{itemize}
+}
+{
+
+}
 
 \subsubsection{Gerencia de Producci\'on}
 
