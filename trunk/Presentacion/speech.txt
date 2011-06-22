@@ -1,4 +1,4 @@
-Division del tiempo: 
+Division del tiempo: (suponiendo que son 20 minutos)
 5 info + 7 organizacion + 7 hipotesis + 2 de sobra por si alguien se pasa.
 
 
@@ -18,7 +18,7 @@ Division del tiempo:
  ********** Parte 2: Organizacion - 7 minutos **********
 
 
-- Organizacion:
+- Organizacion: (esta es la parte que mas tiempo tiene que consumir junto con el organigrama)
 	Explicar que la empresa casi no tiene organizacion formal
 	hay muy poca documentacion
 	Los puestos gerenciales son básicamente por la antigüedad de las personas en la empresa
@@ -32,8 +32,9 @@ Division del tiempo:
 	Contar que el organigrama lo armamos en base a las distintas entrevistas, dado que no hay una estructura definida claramente. Los puestos gerenciales estan divididos por funcion mientras que el sector de produccion esta dividido por las diferentes tareas a lo largo de la cadena productiva.
 
 
-- Manual de Funciones
+- Manual de Funciones (pasar rapidamente esta parte xD )
 	(leer los manuales como para tener idea de lo que hay que decir)
+	Aclarar que en las diapositivas mostramos  lo que se hace dentro de cada gerencia en general, sin especificar cada sector ya que seria mucho detalle y consumiria mucho tiempo.
 	Si cosas particulares (buenas o malas) en esa area habria que contarlas para rellenar de forma "mas divertida" los 7 minutos	
 
 
@@ -54,6 +55,9 @@ Division del tiempo:
 	Decir tambien que si bien se va a contratar mano de obra para poder producir mas, el cambio importante esta en los cargos gerenciales intermedios, ya que ahora se manejan de forma "desordenada" y para poder cumplir con lo pedido se necesita mas gente trabajando en conjunto y de forma coordinada para evitar problemas.
 
 - conclusiones
-	cri cri
+	(leer la conclusion del informe)
+	En pocas palabras, hay que decir que si bien la empresa no esta muy organizada, ese esquema a ellos les funciona.. pero que en cuanto quieran agrandarse un poco ya van a tener que empezar a formalizar para evitar problemas.
+	Ademas ahora estan muy comodos porque tienen un contrato de exclusividad pero que si nike corta el contrato o se termina el tiempo, es muy probable que encuentren una empresa mas organizada y mas eficiente lo cual los podria dejar fuera de negocio o bien tendrian que empezar a competir con otra empresa, con lo cual organizarse seria practicamente obligatorio.
+	
 
 FIN :)
